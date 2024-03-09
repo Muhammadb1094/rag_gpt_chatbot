@@ -148,3 +148,23 @@ REST_FRAMEWORK = {
             'rest_framework.permissions.IsAuthenticated',
         )
 }
+
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'file': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': 'rag_chatbot.log',
+        },
+    },
+    'loggers': {
+        'chat': {
+            'handlers': ['file'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+    },
+}
