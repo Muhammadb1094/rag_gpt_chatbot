@@ -1,1 +1,45 @@
 Answer from GPT for prompt 'This is my testing Prompt' Asked By User bilal  is response1
+Answer from GPT for prompt 'Who was the prime minister of Pakistan in 2020.' Asked By User bilal  is 1 validation error for OpenAIChat
+__root__
+  Did not find openai_api_key, please add an environment variable `OPENAI_API_KEY` which contains it, or pass `openai_api_key` as a named parameter. (type=value_error)
+Answer from GPT for prompt 'Who was the prime minister of Pakistan in 2020.' Asked By User bilal  is 'Settings' object has no attribute 'OPENAI_KEY'
+Answer from GPT for prompt 'Who was the prime minister of Pakistan in 2020.' Asked By User bilal  is Could not import openai python package. Please install it with `pip install openai`.
+Answer from GPT for prompt 'Who was the prime minister of Pakistan in 2020.' Asked By User bilal  is 1 validation error for LLMChain
+prompt
+  field required (type=value_error.missing)
+Answer from GPT for prompt 'Who was the prime minister of Pakistan in 2020.' Asked By User bilal  is 1 validation error for LLMChain
+prompt
+  field required (type=value_error.missing)
+Answer from GPT for prompt 'Who was the prime minister of Pakistan in 2020.' Asked By User bilal  is 1 validation error for LLMChain
+prompt
+  field required (type=value_error.missing)
+Answer from GPT for prompt 'Who was the prime minister of Pakistan in 2020.' Asked By User bilal  is 1 validation error for LLMChain
+prompt
+  value is not a valid dict (type=type_error.dict)
+Answer from GPT for prompt 'Who was the prime minister of Pakistan in 2020.' Asked By User bilal  is 'Settings' object has no attribute 'OPENAI_KEY'
+Answer from GPT for prompt 'Who was the prime minister of Pakistan in 2020.' Asked By User bilal  is 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+Answer from GPT for prompt 'Who was the prime minister of Pakistan in 2020.' Asked By User bilal  is 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+Answer from GPT for prompt 'Who was the prime minister of Pakistan in 2020.' Asked By User bilal  is None
+Answer from GPT for prompt 'Who was the prime minister of Pakistan in 2020.' Asked By User bilal  is None
+Answer from GPT for prompt 'Who was the prime minister of Pakistan in 2020.' Asked By User bilal  is Imran Khan was the prime minister of Pakistan in 2020. He took office in August 2018.
+Answer from GPT for prompt 'What is the meaning Vivid in English.' Asked By User bilal  is "Vivid" in English means something that is very bright, intense, or lively, often related to colors, images, or descriptions that are very clear and striking.
+Answer from GPT for prompt 'What is the meaning Vivid in English.' Asked By User bilal  is "Vivid" in English means something that is very clear, detailed, and intense in color or appearance. It can also be used to describe something that is lively, vibrant, or full of energy.
+Answer from GPT for prompt 'What is the meaning Vivid in English.' Asked By User bilal  is "Vivid" in English means something that is very clear, detailed, and intense, often evoking a strong impression or image in the mind. It can refer to colors, descriptions, memories, or experiences that are striking and lifelike.

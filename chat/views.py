@@ -5,6 +5,7 @@ from rest_framework import status
 from .models import Conversation, Message
 from .serializers import ConversationSerializer, MessageSerializer
 from rest_framework.permissions import IsAuthenticated
+from .llm_gpt import get_llm_response, test
 
 
 
@@ -64,7 +65,7 @@ class MessageView(APIView):
             return Response({'detail': 'Conversation not found'}, status=status.HTTP_404_NOT_FOUND)
 
         prompt = request.data.get("prompt")
-        response = "response1"
+        response = test(query=prompt, conver_id=conversation_id)
         message = Message(
             conversation=conversation,
             query=prompt,
@@ -73,7 +74,7 @@ class MessageView(APIView):
         message.save()
         
         # Saving the last message to get conversations more faster
-        conversation.last_message = "response1"
+        conversation.last_message = response
         conversation.save()
         logger.info(f"Answer from GPT for prompt '{prompt}' Asked By User {request.user}  is {response}")
         return Response(
