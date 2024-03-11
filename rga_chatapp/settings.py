@@ -48,6 +48,7 @@ DJANGO_APPS = [
 OTHER_APPS = [
     "user",
     "chat",
+    "doc_processing",
 ]
 INSTALLED_APPS = DJANGO_APPS + OTHER_APPS
 

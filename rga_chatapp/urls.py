@@ -23,4 +23,5 @@ urlpatterns = [
     # chatapp urls
     path('conversations/', include('chat.urls')),
     path('users/', include('user.urls')),
+    path('documnents/', include('doc_processing.urls')),
 ]
