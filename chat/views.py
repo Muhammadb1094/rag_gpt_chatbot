@@ -5,7 +5,7 @@ from rest_framework import status
 from .models import Conversation, Message
 from .serializers import ConversationSerializer, MessageSerializer
 from rest_framework.permissions import IsAuthenticated
-from .llm_gpt import get_llm_response
+from .llm_gpt import (get_llm, get_openai_qdrant, get_llm_qdrant)
 
 
 
@@ -65,7 +65,8 @@ class MessageView(APIView):
             return Response({'detail': 'Conversation not found'}, status=status.HTTP_404_NOT_FOUND)
 
         prompt = request.data.get("prompt")
-        response = get_llm_response(query=prompt, conver_id=conversation_id)
+        response = get_llm_qdrant(prompt, conversation_id)
+        # response = get_openai_qdrant(prompt, conversation_id)
         message = Message(
             conversation=conversation,
             query=prompt,
