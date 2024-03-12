@@ -14,8 +14,9 @@ This project involves the creation of an API server that harnesses Retrieval Aug
     >>> git clone git@github.com:Muhammadb1094/rag_gpt_chatbot.git
 
 #### 2. Set up a virtual environment and install the required dependencies, using:
-    
-    >>> pip install -r requirements.txt
+    1. Enviroment and the base code has been setuped using python3.10.12 version.
+    2. We are using --no-deps to prevents dependency issues of versions.
+    >>> pip install -r requirements.txt --no-deps
 
 #### 3. Setup Enviroment Variables and Databse to run Django Project:
     1. Create .env file in rga_chatapp directory.
