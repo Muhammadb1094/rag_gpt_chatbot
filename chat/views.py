@@ -5,7 +5,7 @@ from rest_framework import status
 from .models import Conversation, Message
 from .serializers import ConversationSerializer, MessageSerializer
 from rest_framework.permissions import IsAuthenticated
-from .llm_gpt import (get_llm, get_openai_qdrant, get_llm_qdrant)
+from .llm_gpt import (get_llm, get_llm_qdrant)
 
 
 
@@ -66,7 +66,6 @@ class MessageView(APIView):
 
         prompt = request.data.get("prompt")
         response = get_llm_qdrant(prompt, conversation_id)
-        # response = get_openai_qdrant(prompt, conversation_id)
         message = Message(
             conversation=conversation,
             query=prompt,

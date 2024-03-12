@@ -2,13 +2,12 @@ from chat.models import Message
 from django.conf import settings
 from langchain import OpenAI, ConversationChain
 from langchain.memory import ConversationBufferMemory
-import openai as open_ai
 from qdrant_client import QdrantClient
-
+import openai as open_ai
 
 
 def get_final_prompt(query):
-        # Get Embeddings
+    # Get Embeddings
     open_ai.api_key = settings.OPENAI_API_KEY
     response = open_ai.Embedding.create(
         input=query,
@@ -75,18 +74,6 @@ def get_llm(query, conver_id):
     output = conversation.predict(input=query)
     return output
 
-
-def get_openai_qdrant(query, conver_id):
-    
-    prompt = get_final_prompt(query)
-    
-    completion = open_ai.ChatCompletion.create(
-        model="gpt-3.5-turbo",
-        messages=[
-            {"role": "user", "content": prompt}
-        ]
-        )
-    return completion.choices[0].message.content
 
 
 def get_llm_qdrant(query, conver_id):
